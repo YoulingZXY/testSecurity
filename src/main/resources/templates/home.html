@@ -7,6 +7,7 @@
 </head>
 <body>
 	<center><h1>This is Home Page</h1></center>
+	<h3 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h3>
 	<a href="/logout">Logout</a>
 </body>
 </html>
